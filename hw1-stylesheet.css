@@ -1,0 +1,30 @@
+.rotateimg180{
+  webkit-transform:rotate(270deg);
+moz-transform: rotate(270deg);
+ms-transform: rotate(270deg);
+o-transform: rotate(270deg);
+transform: rotate(270deg);
+}
+a {
+    color: black;
+}
+body {
+   background-color: hsla(50, 33%, 25%, .75);
+   color: #500;
+
+}
+h1 {
+    color: #600;
+}
+p {
+    font-style: italic;
+}
+#new_paragraph{
+  background-color: white;
+  text-align: right;
+  color: #600
+}
+#picture {
+  width:200px;
+  height:150px;
+}
