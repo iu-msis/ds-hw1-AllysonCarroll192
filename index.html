@@ -5,27 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style type="text/css">
-      section, section.placeholder {
-        background: white;
-        border:2px solid rgb(50, 50, 100);
-        text-align: center;
-      }
-      section h2 {
-          text-transform: uppercase;
-          color: #999:inherit;
-          text-align: left;
-      }
-      .data{
-          font-size: 22pt;
-          color: rgb(0,143,0)
-      }
-      .label{
-          text-transform: uppercase;
-          color: rgb(0,143,0)
 
-      }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="hw1-stylesheet.css">
+    <style type="text/css">
+
       body {
           margin: 0;
       }
@@ -57,86 +41,52 @@
           background-color: #600;
           color: white;
       }
+      img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 150px;
+      }
+
+      img:hover {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      }
       </style>
       </head>
       <body>
 
       <ul>
-        <li><a class="active" href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\index.html">Home</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\table-page.html">About Me</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\thirdpage.html">More Info</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\index.html">Home</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\table-page.html">My Travels</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\MiscInfo.html">More Info</a></li>
       </ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-      <div class="row">
-        <div class="col placeholder">
-          Completion %
-        </div>
-        <section class="col placeholder">
-          <h2> Target Date</h2>
-          <div class = 'row'>
-            <div class= 'col'>
-              <span class="label">  Date:</span>
-              <span class="data"> 11/1/18</span>
-            </div>
-            <div>
-            Days remaining
-            </div>
-        </div>
-        </section>
-        <div class="col placeholder">
-          Status
-        </div>
-      </div> <!-- end of row 1-->
-      <div class="row">
-        <div class="col placeholder" style="height:200px">
-          Budget chart goes here
-        </div>
-        <div class="col placeholder">
-          Burndown chart goes here
-        </div>
-        <div class="col placeholder">
-          Effort chart goes here
-        </div>
-      </div> <!-- end of row 2 charts-->
-      <div class="row">
-        <table class="table table-striped table-sm">
-          <thead>
-            <th>
-              Task
-            </th>
-            <th>
-              Size
-            </th>
-            <th>
-              Team Name
-            </th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Create a Dashboard
-              </td>
-              <td>
-                L
-              </td>
-              <td>
-                Team 22
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Build Charts
-              </td>
-              <td>
-                M
-              </td>
-              <td>
-                Team 13
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div> <!-- end of row 3 tabular-->
+      <div>
+        <h2 id= "new_paragraph">
+          Information About Me
+        </h2>
+        <h1>
+          Who is Allyson Carroll?
+        </h1>
+        <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_MGL0034.jpg'>
+        <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_MGL0034.jpg" alt= "headshot"/>
+        </a>
+        <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_DSC7435.jpg'>
+        <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_DSC74354.jpg" alt= "headshot2"/>
+        </a>
+
+        <p>
+          Graduate Student at Indiana University
+        </p>
+          <address>
+            Email me at <a href="mailto:allcarro@iu.edu">allcarro@iu.edu</a>.<br>
+            Birthdate:
+            May 27th 1996<br>
+            22 years old <br>
+            Indianapolis, Indiana<br>
+            USA
+          </address>
+      </div>
     </div>
   </body>
 </html>
