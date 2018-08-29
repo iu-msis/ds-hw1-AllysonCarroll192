@@ -5,27 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style type="text/css">
-      section, section.placeholder {
-        background: white;
-        border:2px solid rgb(50, 50, 100);
-        text-align: center;
-      }
-      section h2 {
-          text-transform: uppercase;
-          color: #999:inherit;
-          text-align: left;
-      }
-      .data{
-          font-size: 22pt;
-          color: rgb(0,143,0)
-      }
-      .label{
-          text-transform: uppercase;
-          color: rgb(0,143,0)
 
-      }
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="hw1-stylesheet.css">
+    <style type="text/css">
+    img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
       body {
           margin: 0;
       }
@@ -62,81 +55,81 @@
       <body>
 
       <ul>
-        <li><a class="active" href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\index.html">Home</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\table-page.html">About Me</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\thirdpage.html">More Info</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\index.html">Home</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\table-page.html">My Travels</a></li>
+        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\MiscInfo.html">More Info</a></li>
       </ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-      <div class="row">
-        <div class="col placeholder">
-          Completion %
-        </div>
-        <section class="col placeholder">
-          <h2> Target Date</h2>
-          <div class = 'row'>
-            <div class= 'col'>
-              <span class="label">  Date:</span>
-              <span class="data"> 11/1/18</span>
-            </div>
-            <div>
-            Days remaining
-            </div>
-        </div>
-        </section>
-        <div class="col placeholder">
-          Status
-        </div>
-      </div> <!-- end of row 1-->
-      <div class="row">
-        <div class="col placeholder" style="height:200px">
-          Budget chart goes here
-        </div>
-        <div class="col placeholder">
-          Burndown chart goes here
-        </div>
-        <div class="col placeholder">
-          Effort chart goes here
-        </div>
-      </div> <!-- end of row 2 charts-->
-      <div class="row">
-        <table class="table table-striped table-sm">
-          <thead>
-            <th>
-              Task
-            </th>
-            <th>
-              Size
-            </th>
-            <th>
-              Team Name
-            </th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Create a Dashboard
-              </td>
-              <td>
-                L
-              </td>
-              <td>
-                Team 22
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Build Charts
-              </td>
-              <td>
-                M
-              </td>
-              <td>
-                Team 13
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div> <!-- end of row 3 tabular-->
+      <h1>Recent Travels</h1>
+      <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\IMG_0295.jpg'>
+      <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\IMG_0295.jpg" alt= "cape town"/>
+      </a>
+      <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\IMG_6078.jpg'>
+      <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\IMG_6078.jpg" alt= "Haley, Kaetlyn and I"/>
+      </a>
+      <table>
+        <tr>
+            <th>Travel Location</th>
+            <th>When</th>
+            <th>With Who</th>
+            <th>For how long</th>
+          </tr>
+          <tr>
+            <td>Cape Town</td>
+            <td>Summer 2016</td>
+            <td>LeadAbroad</td>
+            <td>2 months</td>
+            </td>
+          </tr>
+          <tr>
+            <td>Dominican Republic</td>
+            <td>March 2018</td>
+            <td>Katelyn </td>
+            <td>1 week</td>
+          </tr>
+          <tr>
+            <td>Europe</td>
+            <td>Summer 2017</td>
+            <td>Haley</td>
+            <td>1 month</td>
+          </tr>
+          <tr>
+            <td>College Station, Texas A&M</td>
+            <td>April 2018</td>
+            <td>Katelyn</td>
+            <td>Weekend</td>
+          </tr>
+          <tr>
+            <td>Atlanta</td>
+            <td>January 2019</td>
+            <td>Haley</td>
+            <td>Weekend</td>
+          </tr>
+
+      </table>
+
+      <form>
+  <div class="form-group">
+    <label>New Location</label>
+    <input type="text" placeholder="Enter location">
+  </div>
+  <div class="form-group">
+    <label>Date went on trip</label>
+    <input type="text" placeholder="Enter dates">
+  </div>
+  <div class="form-group">
+    <label>Who did you go with</label>
+    <input type="text" placeholder="Enter name">
+  </div>
+  <div class="form-group">
+    <label>Duration</label>
+    <input type="text" placeholder="Enter duration">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
     </div>
   </body>
 </html>
