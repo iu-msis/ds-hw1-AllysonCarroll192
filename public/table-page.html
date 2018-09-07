@@ -67,7 +67,7 @@ img:hover {
       <a target='blank' href='img/IMG_6078.jpg'>
       <img id="picture" src="img/IMG_6078.jpg" alt= "Haley, Kaetlyn and I"/>
       </a>
-      <table>
+      <table id= "taskTable">
         <tr>
             <th>Travel Location</th>
             <th>When</th>
@@ -131,5 +131,11 @@ img:hover {
 </form>
 
     </div>
+    <script src='js/tablesort.min.js'></script>
+    <script>
+  new Tablesort(document.getElementById('taskTable'));
+</script>
+//from http://tristen.ca/tablesort/demo/~ 
+
   </body>
 </html>
