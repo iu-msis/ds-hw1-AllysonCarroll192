@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="hw1-stylesheet.css">
+    <link rel="stylesheet" href="css/hw1-stylesheet.css">
     <style type="text/css">
 
       body {
@@ -56,9 +56,9 @@
       <body>
 
       <ul>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\index.html">Home</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\table-page.html">My Travels</a></li>
-        <li><a href="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\MiscInfo.html">More Info</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="table-page.html">My Travels</a></li>
+        <li><a href="MiscInfo.html">More Info</a></li>
       </ul>
     <div style="margin-left:25%;padding:1px 16px;height:1000px;">
       <div>
@@ -68,11 +68,11 @@
         <h1>
           Who is Allyson Carroll????
         </h1>
-        <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_MGL0034.jpg'>
-        <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_MGL0034.jpg" alt= "headshot"/>
+        <a target='blank' href='img/_MGL0034.jpg'>
+        <img id="picture" src="img/_MGL0034.jpg" alt= "headshot"/>
         </a>
-        <a target='blank' href='C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_DSC7435.jpg'>
-        <img id="picture" src="C:\Users\allyson\Documents\GitHub\ds-hw1-AllysonCarroll192\temp-msis\public\_DSC74354.jpg" alt= "headshot2"/>
+        <a target='blank' href='img/_DSC7435.jpg'>
+        <img id="picture" src="img/_DSC7435.jpg" alt= "headshot2"/>
         </a>
 
         <p>
@@ -88,5 +88,35 @@
           </address>
       </div>
     </div>
+
+    <main id="randomuser" class="container-fluid">
+      <h1>Random User</h1>
+      <div> {results.gender}</div>
+      <div> Name: </div>
+      <div> {results.title}</div>
+      <div> {results.first}</div>
+      <div> {results.last}</div>
+      <div>Location</div>
+      <div> {results.street}</div>
+      <div> {results.city}</div>
+      <div> {results.state}</div>
+      <div> {results.postcode}</div>
+      <div>Coordinates: </div>
+      <div> {results.latitude}</div>
+      <div> {results.longitude}</div>
+      <div> Timezone:</div>
+      <div> {results.offset}</div>
+      <div> {results.description}</div>
+    </main>
+
+    <div id="reloadlink">
+  <button v-on:click="">New User</button>
+  <p> {{  }} </p>
+  </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/randomuser.js"></script>
+
   </body>
 </html>

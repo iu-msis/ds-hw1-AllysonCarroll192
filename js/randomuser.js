@@ -64,7 +64,7 @@ var randomuser = new VUE({
 })
 
 methods: {
-  fetchProject () {
+  fetchuser () {
   fetch('https://randomuser.me/api/')
   .then( response => response.json() )
   .then( json => {randomuser.project = json} )
@@ -78,3 +78,9 @@ created () {
 this.fetchProject();
 this.fetchTasks();
 }
+var reloadlink = new Vue({
+  el: '#reloadlink',
+  data: {
+    counter:
+  }
+})
