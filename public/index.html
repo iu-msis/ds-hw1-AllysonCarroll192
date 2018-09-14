@@ -1,4 +1,4 @@
-//* checking // 
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -53,7 +53,9 @@
       box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
       }
       </style>
+      <title> My Page</title>
       </head>
+
       <body>
 
       <ul>
@@ -69,11 +71,11 @@
         <h1>
           Who is Allyson Carroll????
         </h1>
-        <a target='blank' href='img/_MGL0034.jpg'>
+        <a target= "blank" href="img/_MGL0034.jpg">
         <img id="picture" src="img/_MGL0034.jpg" alt= "headshot"/>
         </a>
-        <a target='blank' href='img/_DSC7435.jpg'>
-        <img id="picture" src="img/_DSC7435.jpg" alt= "headshot2"/>
+        <a target="blank" href="img/_DSC7435.jpg" >
+        <img id="picture2" src="img/_DSC7435.jpg" alt= "headshot2"/>
         </a>
 
         <p>
@@ -89,35 +91,71 @@
           </address>
       </div>
     </div>
-
-    <main id="randomuser" class="container-fluid">
-      <h1>Random User</h1>
-      <div> {results.gender}</div>
-      <div> Name: </div>
-      <div> {results.title}</div>
-      <div> {results.first}</div>
-      <div> {results.last}</div>
-      <div>Location</div>
-      <div> {results.street}</div>
-      <div> {results.city}</div>
-      <div> {results.state}</div>
-      <div> {results.postcode}</div>
-      <div>Coordinates: </div>
-      <div> {results.latitude}</div>
-      <div> {results.longitude}</div>
-      <div> Timezone:</div>
-      <div> {results.offset}</div>
-      <div> {results.description}</div>
-    </main>
-
-    <div id="reloadlink">
-  <button v-on:click="">New User</button>
-  <p> {{  }} </p>
-  </div>
+<main id="randomuser">
 
 
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="js/randomuser.js"></script>
+  <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+        <h1>Random User</h1>
+    <table class="container-fluid">
 
+      <thead>
+        <tr>
+          <th>
+            Name
+          </th>
+          <th>
+            DOB
+          </th>
+          <th>
+            Age
+          </th>
+          <th>
+            Address
+          </th>
+          <th>
+            Email
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+             {{person.name.first}}{{person.name.last}}
+          </td>
+          <td>
+            {{pretty_date(person.dob.date)}}
+          </td>
+          <td>
+            {{todateage}}
+          </td>
+          <td>
+            {{person.location.street}}, {{person.location.city}}, {{person.location.state}}, {{person.location.postcode}}
+          </td>
+          <td>
+            <a href="mailto:{{person.email}}"> {{person.email}}</a>
+          </td>
+          <td>
+            <a v-bind:href = "person.picture.large"> <img v-bind:src = "person.picture.thumbnail" /></a>
+          </td>
+
+        </tr>
+        <tr>
+          <td>
+
+          </td>
+        </tr>
+      </tbody>
+
+
+    </table>
+
+<button type="submit" value="Refresh Page" @click="fetchuser">new user</button>
+</div>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="js/randomuser.js"></script>
   </body>
 </html>
