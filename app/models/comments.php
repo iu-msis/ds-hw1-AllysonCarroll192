@@ -25,7 +25,7 @@ public static function fetchALL(){
   $success = $statement->execute();
   $arr = [];
   while ($row = $statement->fetch(PDO::FETCH-ASSOC)){
-    $theComment = new Comment($row);
+    $theComment = new Comments($row);
     array_push($arr, $theComment);
   }
   return $arr;

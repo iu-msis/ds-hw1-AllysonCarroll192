@@ -6,7 +6,7 @@ if($_SERVER['REQUEST_METHOD']=='POST') {
 }
 
 $commentArr = [];
-$commentArr = Comment::fetchALL();
+$commentArr = Comments::fetchALL();
 
 $json = json_encode($commentARR, JSON_PRETTY_PRINT);
 
