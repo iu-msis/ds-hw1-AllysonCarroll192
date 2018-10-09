@@ -1,0 +1,12 @@
+CREATE TABLE Comment (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  comment VARCHAR(255) NOT NULL
+);
+INSERT INTO Comments (id, comment)
+VALUES (1, "This is my homework");
+
+INSERT INTO Comments (id, comment)
+VALUES (2, "I wish this wasn't homework");
+
+INSERT INTO Comments (id, comment)
+VALUES (3, "That's all");
