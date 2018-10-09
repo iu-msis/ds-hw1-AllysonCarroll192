@@ -17,7 +17,7 @@ class Comments
     ]);
     $this->id = $db->lastInsertID();
   }
-}
+
 public static function fetchALL(){
   $db = new PDO(DB_SERVER, DB_USER, DB_PW);
   $sql = 'SELECT * FROM Comment';
@@ -29,4 +29,5 @@ public static function fetchALL(){
     array_push($arr, $theComment);
   }
   return $arr;
+}
 }
