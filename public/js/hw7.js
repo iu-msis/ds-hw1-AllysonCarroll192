@@ -17,7 +17,7 @@ methods:{
 console.log("comment form");
     console.log(s);
 
-    fetch('/api/comment.php', {
+    fetch('api/comment.php', {
       method:"POST",
       headers: {
         "Content-Type": "application/json; charset=utf-8"
