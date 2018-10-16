@@ -14,7 +14,7 @@ methods:{
     e.preventDefault();
 
     const s = JSON.stringify(this.commentForm);
-console.log("comment  form");
+console.log("comment form");
     console.log(s);
 
     fetch('/api/comment.php', {
@@ -25,7 +25,7 @@ console.log("comment  form");
       body: s
     })
     .then( response => response.json() )
-    .then( json => {this.cArr.push(json)})
+    .then( json => {this.cArr.push(json)} )
     .catch( err => {
       console.error('COMMENT POST ERROR:');
       console.error(err);

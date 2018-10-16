@@ -9,10 +9,10 @@ class Comments
   }
   public function create() {
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
-    $sql = 'INSERT INTO Comment (id, comment) VALUE(?, ?)';
+    $sql = 'INSERT INTO Comment (comment) VALUE(?)';
     $statement = $db->prepare($sql);
     $success = $statement->execute([
-      $this->id,
+      //$this->id,
       $this->comment,
     ]);
     $this->id = $db->lastInsertID();
