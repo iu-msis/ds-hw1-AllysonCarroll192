@@ -14,7 +14,7 @@ methods:{
     e.preventDefault();
 
     const s = JSON.stringify(this.commentForm);
-
+console.log("comment  form");
     console.log(s);
 
     fetch('/api/comment.php', {
