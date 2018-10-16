@@ -1,10 +1,6 @@
 var commentTable = new Vue({
   el: '#commentVue',
   data: {
-    comment: {
-      id: 0,
-      comment:''
-    },
     commentForm: {},
     cArr:[]
   },
