@@ -52,7 +52,7 @@ fetchComments () {
 
   })
 }},
-creatd () {
+created () {
   this.fetchComments();
 }
 });
