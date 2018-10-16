@@ -45,7 +45,7 @@ getEmptyCommentForm() {
 fetchComments () {
   fetch('/api/comment.php')
   .then( response => response.json() )
-  .then( json => {commentApp.cArr = json} )
+  .then( json => {commentTable.cArr = json} )
   .catch( err => {
     console.error('COMMENT FETCH ERROR:');
     console.error(err);
