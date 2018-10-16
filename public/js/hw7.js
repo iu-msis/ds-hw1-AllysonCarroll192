@@ -34,7 +34,7 @@ methods:{
     this.commentform = this.getEmptyCommentForm();
 
   },
-  
+
 getEmptyCommentForm() {
   return {
     id:0,
@@ -51,7 +51,7 @@ fetchComments () {
     console.error(err);
 
   })
-},
+}},
 creatd () {
   this.fetchComments();
 }
