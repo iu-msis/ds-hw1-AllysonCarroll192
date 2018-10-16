@@ -11,7 +11,7 @@ var commentTable = new Vue({
 
 methods:{
   handleCommentForm(e) {
-    e.preventDefault();
+    //e.preventDefault();
 
     const s = JSON.stringify(this.commentForm);
 console.log("comment form");
