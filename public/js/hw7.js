@@ -37,7 +37,7 @@ console.log("comment form");
 
 getEmptyCommentForm() {
   return {
-    id:0,
+    //id:0,
     comment: ''
   }
 },
