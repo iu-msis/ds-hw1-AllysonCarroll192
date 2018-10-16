@@ -54,5 +54,6 @@ fetchComments () {
 }},
 created () {
   this.fetchComments();
+  this.commentForm = this.getEmptyCommentForm();
 }
 });
