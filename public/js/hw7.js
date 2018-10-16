@@ -2,7 +2,7 @@ var commentTable = new Vue({
   el: '#commentVue',
   data: {
     commentForm: {},
-    cArr:[]
+    cArr:[],
   },
 
 methods:{
@@ -33,7 +33,7 @@ console.log("comment form");
 
 getEmptyCommentForm() {
   return {
-    //id:0,
+    id:0,
     comment: ''
   }
 },
