@@ -1,5 +1,5 @@
 var commentTable = new Vue({
-  el: '#comment',
+  el: '#commentVue',
   data: {
     comment: {
       id: 0,
@@ -11,7 +11,7 @@ var commentTable = new Vue({
 
 methods:{
   handleCommentForm(e) {
-    //e.preventDefault();
+    e.preventDefault();
 
     const s = JSON.stringify(this.commentForm);
 console.log("comment form");
