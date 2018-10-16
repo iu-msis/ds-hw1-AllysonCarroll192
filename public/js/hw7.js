@@ -31,7 +31,7 @@ console.log("comment form");
       console.error(err);
     })
 
-    this.commentform = this.getEmptyCommentForm();
+    this.commentForm = this.getEmptyCommentForm();
 
   },
 
