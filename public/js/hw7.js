@@ -43,7 +43,7 @@ getEmptyCommentForm() {
 },
 
 fetchComments () {
-  fetch('/api/comment.php')
+  fetch('api/comment.php')
   .then( response => response.json() )
   .then( json => {commentTable.cArr = json} )
   .catch( err => {
